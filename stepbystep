@@ -1,0 +1,40 @@
+1- Crear el index.php y el style.css
+2- Crear el encabezado y el formulario
+3- Crear el archivo cargar_empleados.php
+4- Recibir los datos del formulario en el archivo cargar_empleado.php
+5- Cear el archivo conexion.php
+6- Conectar con la base de datos y hacer el fallback.
+7- Requerir o incluir el archivo de conexión desde cargar_empleado.php
+8- Realizar una consulta con mysqli_query();
+9- Testear que cargue un cargar_empleado
+10- Redirigir al index.php con: header('Location: index.php?ok');
+11- Escribir un mensaje de carga exitosa cuando vuelve al index.html
+
+<?php
+    if(isset($_GET['ok'])) {
+        echo "<h4>Carga exitosa!</h4>";
+    }
+    ?>
+
+12- Crear el archivo ver.php
+13- Copiar los componentes del html y armar la estructura que va a recibir la info de los registros.
+14- Traer el archivo de conexión para conectar con la base de datos.
+15- Hacer una consulta que traiga los datos ingresados en la DB.
+16- Crear un bucle que nos devuelva un array mysqli_fetch_assoc() para imprimir la info de la consulta en el html 
+17- LLenar los campos a visualizar con las variables
+18- Crear el archivo eliminar.php y su boton en ver_empleado.php, para borrar registros. Ver 52 minutos del video para entender mejor.
+19- Requerir el archivo de conexión
+20- Hacer una consulta con DELETE para que borre un registro con un id determinado. 
+21- Crear el archivo editar.php (min 56)
+22- Este archivo va a tener estructura porque necesitamos ver lo que vamos a modificar en pantalla. 
+23- Traer el archivo de conexión 
+24- Requerir el id y guardarlo en una variables
+25- Seleccionar toda la información de la base de datos con el id del empleado requerido
+26- Guardar esa información en un array associativo para tener disponibles las variables
+27- Rellenar los values de los campos del formulario con la información que traemos desde la DB
+28- Editar la información
+29- Crear el archivo editar_empleado.php
+30- Traer los datos de la edición y requerir el archivo de conexión 
+31-  Crear un input hidden para obtener el id
+32- Hacer la consulta para el UPDATE de los valores
+33- Mostrar los valores modificados en el archivo ver_empleados.php

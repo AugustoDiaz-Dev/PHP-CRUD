@@ -1,0 +1,109 @@
+/* index.php */
+
+body {
+    box-sizing: border-box;
+    color: white;
+}
+/* .message {
+    text-align: center;
+} */
+#inicio {
+    max-width: 767px;
+    margin: 0 auto;
+}
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    display: inline-block;
+}
+h3 {
+    font-size: 24px;
+    display: inline-block;
+    margin-left: 20px;
+}
+a {
+    text-decoration: none;
+    color: white!important;
+    text-shadow: 2px 2px grey;
+}
+a:hover {
+    color: grey;
+}
+
+.form-center {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: 2px solid grey;
+    background-color: #bd2d20;
+    padding: 16px;
+    border-radius: 20px;
+}
+
+form {
+    height: auto;
+    background-color: grey;
+    color: black;
+    padding: 20px;
+    margin: 0 auto;
+    border-top: 2px solid black;
+    border-radius: 20px;
+}
+input, textarea {
+    display: block;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+/* VER.php */
+h4 {
+    font-size: 20px;
+    color: #bd2d20;
+}
+.empleados {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: grey;
+    margin-bottom: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.img_emp img{
+    width: 150px;
+    float: left;
+}
+.icon {
+    padding: 0px 20px;
+    float: right;
+    display: inline;
+}
+.info_emp {
+    width: 550px;
+    float: right;
+}
+.borrar {
+    clear: both;
+}
+/* HEADER COMPONENT */
+.header {
+    width: 767px;
+    height: 60px;
+    background-color: #bd2d20;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: 10px;
+    border: 2px solid grey;
+}
+/* FOOTER COMPONENT */
+.footer {
+    border-top: 1px solid grey;
+    padding: 10px;
+}
+.footer, a {
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto;
+}

@@ -1,0 +1,10 @@
+CREATE DATABASE phpavanzado1806;
+
+CREATE TABLE empleados (
+id INT NOT NULL AUTO_INCREMENT,
+nombre VARCHAR ( 30 ) NOT NULL ,
+apellido VARCHAR ( 50) NOT NULL,
+imagen VARCHAR (30) NOT NULL,
+descripcion TEXT NOT NULL,
+PRIMARY KEY (id)
+);
