@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Base de datos de empleados</title>
 </head>
 <body>
 
 <?php
-require("header.php");
+require("./components/header.php");
 ?>
 
 <section id="inicio">
    <div class="form-center">
-   <form method="POST" action="cargar_empleado.php">
+   <form method="POST" action="./php/cargar_empleado.php">
     <input type="text" name="nombre" placeholder="Nombre" maxlenght="30" required>
     <input type="text" name="apellido" placeholder="Apellido" maxlenght="50" required>
     <input type="text" name="imagen" placeholder="Imagen" maxlenght="30" required>
@@ -28,11 +28,11 @@ require("header.php");
     //     echo "<h4>Carga exitosa!</h4>";
     // }
     ?> 
-
+    
    </div>
 
    <?php
-include("footer.php");
+include("./components/footer.php");
 ?>
     
 </section>

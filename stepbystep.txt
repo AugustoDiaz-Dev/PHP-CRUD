@@ -1,3 +1,15 @@
+CREATE DATABASE phpavanzado1806;
+
+CREATE TABLE empleados (
+id INT NOT NULL AUTO_INCREMENT,
+nombre VARCHAR ( 30 ) NOT NULL ,
+apellido VARCHAR ( 50) NOT NULL,
+imagen VARCHAR (30) NOT NULL,
+descripcion TEXT NOT NULL,
+PRIMARY KEY (id)
+);
+
+
 1- Crear el index.php y el style.css
 2- Crear el encabezado y el formulario
 3- Crear el archivo cargar_empleados.php

@@ -7,25 +7,22 @@
     <script src="//js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
     <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
 						
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Base de datos de empleados</title>
 </head>
 <body>
-
 <?php
-require("header.php");
+require("./components/header.php");
 ?>
-
 <section id="inicio">
     <?php
-    require('conexion.php');
+    require('./php/conexion.php');
     $id = $_GET['id'];
     $datos_empleado =  mysqli_query($datos_db, "SELECT * FROM empleados WHERE id = $id");
     $info_empleado = mysqli_fetch_assoc($datos_empleado);
-    
     ?>
    <div class="form-center">
-   <form method="POST" action="editar_empleado.php">
+   <form method="POST" action="./php/editar_empleado.php">
     <input type="hidden" name="id" value="<?php echo $info_empleado['id'] ?>">
     <input type="text" name="nombre" value="<?php echo $info_empleado['nombre'] ?>
 ">
@@ -42,7 +39,7 @@ require("header.php");
 </section>
 
 <?php
-include("footer.php");
+include("./components/footer.php");
 ?>
 </body>
 </html>

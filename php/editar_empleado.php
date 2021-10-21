@@ -9,5 +9,5 @@ include('conexion.php');
 
 mysqli_query($datos_db, "UPDATE empleados SET nombre = '$nombre_edit', apellido = '$apellido_edit', imagen = '$imagen_edit', descripcion = '$descripcion_edit' WHERE id = '$id_edit'");
 
-header("Location: ver_empleado.php");
+header("Location: ../ver_empleado.php");
 ?>

@@ -10,5 +10,5 @@ include('conexion.php');
 mysqli_query($datos_db, "INSERT INTO empleados VALUES (DEFAULT, '$nombre_empleado', '$apellido_empleado', '$imagen_empleado', '$descripcion_empleado')");
 // Redireccionar al index.php después de la carga de datos y dar un msj
 // header('Location: index.php?ok');
-header('Location: ver_empleado.php');
+header('Location: ../ver_empleado.php');
 ?>
